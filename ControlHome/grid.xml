@@ -1,0 +1,11 @@
+<GridView
+    android:id="@+id/gridFriends"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="true"
+    android:columnWidth="100dp"
+    android:fastScrollEnabled="true"
+    android:gravity="center"
+    android:numColumns="auto_fit"
+    android:stretchMode="columnWidth" >
+</GridView>
