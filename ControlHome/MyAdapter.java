@@ -1,6 +1,6 @@
 /*
- *This is the adapter used for GridView 
-
+ *This is the adapter used for GridView assumed that "grid.xml" GridView is available in layout folder
+*/
 public class MyAdapter extends BaseAdapter {
  
        private Context mContext;
