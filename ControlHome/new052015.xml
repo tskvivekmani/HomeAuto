@@ -1,0 +1,32 @@
+<!-- For fixed ColumnWidth, use android:columnWidth="60dp" 
+-->
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnWidth="60dp"
+    android:gravity="<span class="IL_AD" id="IL_AD1">center</span>"
+    android:horizontalSpacing="10dp"
+    android:layoutAnimation="@anim/layout_wave_scale"
+    android:numColumns="auto_fit"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="10dp" />
+    
+<!-- Wave Animation -->
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:interpolator="@android:anim/accelerate_interpolator">
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="100" />
+    <scale
+        android:fromXScale="0.5" android:toXScale="1.5"
+        android:fromYScale="0.5" android:toYScale="1.5"
+        android:pivotX="50%" android:pivotY="50%"
+        android:duration="200" />
+    <scale
+        android:fromXScale="1.5" android:toXScale="1.0"
+        android:fromYScale="1.5" android:toYScale="1.0"
+        android:pivotX="50%" android:pivotY="50%"
+        android:startOffset="200"
+        android:duration="100" />
+</set>
